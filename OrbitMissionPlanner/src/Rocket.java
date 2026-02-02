@@ -3,13 +3,25 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+/**
+ * Represents a launch vehicle with specific lift capabilities.
+ * Manages the loading of payloads and validates launch viability
+ * based on weight limits.
+ * * @author Victor Santana
+ * @version 1.0 (MVP)
+ */
 public class Rocket {
     
     // Initializing private fields for the rocket's name, maximum weight capacity, and current weight.
     private String rocketName;
     private double rocketMaxWeight;
     private ArrayList<PayloadItem> rocketCurrentPayloads;
-
+    
+    /**
+     * Creates a new Rocket instance.
+     * * @param name The mission name.
+     * @param maxWeight The absolute maximum weight capacity in kilograms.
+     */
     // Constructor to initialize the rocket with a name and maximum weight capacity.
     public Rocket(String rocketName, double rocketMaxWeight) {
         this.rocketName = rocketName;

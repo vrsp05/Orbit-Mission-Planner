@@ -1,5 +1,10 @@
 // This class represents a payload item for an orbit mission planner.
-
+/**
+ * Attempts to add a payload item to the rocket.
+ * Performs a pre-check to ensure capacity is not exceeded.
+ * * @param item The PayloadItem object to be added.
+ * @return true if the item was added successfully; false if it would exceed max capacity.
+*/
 public class PayloadItem {
     
     // Declaring private fields for name and weight of the payloa.
