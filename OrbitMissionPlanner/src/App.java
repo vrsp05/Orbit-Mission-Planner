@@ -99,7 +99,8 @@ public class App {
                 // Only offer to save if it is a "Go" (optional business rule)
                 if (myRocket.launchCheck().equals("Go"))
                 {   
-
+                    scanner.nextLine();
+                    
                     // Prompt user to save mission since it is viable.
                     System.out.print("Mission is viable! Save to logs? (y/n): ");
                     String saveChoice = scanner.nextLine();
