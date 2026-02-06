@@ -91,7 +91,7 @@ public class FileManager {
         try {
 
             // Create a File object to read from the file.
-            File myObj = new File("Orbit_Missions_Database.csv");
+            File myObj = new File(this.fileName);
 
             // Create a Scanner object to read the file.
             Scanner myReader = new Scanner(myObj);
