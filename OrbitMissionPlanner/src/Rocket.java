@@ -29,6 +29,8 @@ public class Rocket {
         this.rocketCurrentPayloads = new ArrayList<>(); // New rockets start with an empty payload list
     } // End of constructor
 
+    // GETTERS & SETTERS
+
     // Getter method to retrieve the rocket's name.
     public String getName() {
         return rocketName;
@@ -38,6 +40,13 @@ public class Rocket {
     public double getMaxWeight() {
         return rocketMaxWeight;
     } // End of getMaxWeight method
+
+    // Getter to get the payload count. 
+    public int getPayloadCount() {
+        return rocketCurrentPayloads.size();
+    } // End of getPayloadCount method
+
+    // MAIN METHODS
 
     // Method to calculate and retrieve the rocket's current weight based on its payloads.
     public double getCurrentWeight() {
@@ -81,5 +90,10 @@ public class Rocket {
         }
 
     } // End of launchCheck method
+
+    // Getter method to retrieve the list of current payloads.
+    public ArrayList<PayloadItem> getCurrentPayloads() {
+        return rocketCurrentPayloads;
+    } // End of getCurrentPayloads method
 
 } // End of Rocket class
