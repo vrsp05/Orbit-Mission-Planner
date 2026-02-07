@@ -20,7 +20,7 @@ A console-based Java application that simulates launch vehicle logistics. This t
 
 1. **Clone the repository**:
 
-   git clone [https://github.com/vrsp05/OrbitMissionPlanner.git](https://github.com/vrsp05/OrbitMissionPlanner.git)
+   git clone [https://github.com/vrsp05/Orbit-Mission-Planner](https://github.com/vrsp05/Orbit-Mission-Planner)
    cd OrbitMissionPlanner
   
 2. **Open the project in VS Code**:
@@ -68,7 +68,7 @@ To recreate the development environment, you need the following software and/or 
   - `java.util.Scanner` (File Parsing) - Reading CSV data.
 
 ## File Structure
-
+```text
 ORBIT-MISSION-PLANNER/
 ├── lib/
 │   └── junit-platform-console-standalone-1.13.0-M3.jar
@@ -90,6 +90,7 @@ ORBIT-MISSION-PLANNER/
 ├── .gitignore
 ├── OrbitMissionDatabase.csv     # Persistent database file
 └── README.md
+```
 
 ## Code Architecture
 
